@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acharya Amal Bajpayee | Vedic Jyotish & Life Coach</title>
+    <meta name="description"
+        content="Ancient Vedic Wisdom for Modern Life Guidance. Professional Vedic Astrology, Life Coaching, and Numerology services by Acharya Amal Bajpayee.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary-dark: #0f0f1e;
+            --color-secondary-dark: #1a1a2e;
+            --color-accent-maroon: #8b3a3a;
+            --color-accent-gold: #d4af37;
+            --color-accent-gold-light: #e8c547;
+            --color-text-primary: #f5f5f5;
+            --color-text-secondary: #d0d0d0;
+            --color-text-tertiary: #a0a0a0;
+            --color-border: #3a3a4e;
+            --color-accent-blue: #1a3a52;
+            --transition-smooth: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* ===================== NAVIGATION ===================== */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 15, 30, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-accent-gold);
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 0.65rem;
+            font-weight: 400;
+            color: var(--color-text-tertiary);
+            letter-spacing: 3px;
+            margin-top: 0.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: var(--transition-fast);
+            position: relative;
+            font-weight: 500;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-accent-gold);
+            transition: var(--transition-fast);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* ===================== HERO SECTION ===================== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(139, 58, 58, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(26, 58, 82, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-family: 'Lora', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--color-accent-gold);
+            letter-spacing: -1px;
+        }
+
+        .hero-content h1 span {
+            display: block;
+            color: var(--color-text-primary);
+            font-size: 1.1em;
+            margin-top: 0.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.15rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--color-accent-gold) 0%, var(--color-accent-gold-light) 100%);
+            color: var(--color-primary-dark);
+            text-decoration: none;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.35);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2.5rem;
+            background: transparent;
+            color: var(--color-accent-gold);
+            text-decoration: none;
+            border: 2px solid var(--color-accent-gold);
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-accent-gold);
+            color: var(--color-primary-dark);
+            transform: translateY(-3px);
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .portrait-frame {
+            width: 100%;
+            max-width: 400px;
+
+            border: 3px solid var(--color-accent-gold);
+            border-radius: 20px;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(139, 58, 58, 0.2), rgba(26, 58, 82, 0.2));
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(212, 175, 55, 0.1);
+            position: relative;
+        }
+
+        .portrait-frame img {
+            width: 100%;
+            height: auto;
+            /* let height grow naturally */
+            object-fit: contain;
+            /* show full image inside frame */
+
+            /* keep head/hair towards top */
+        }
+
+
+        .portrait-placeholder {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a3a52 0%, #2a1a2e 100%);
+            font-size: 1rem;
+            color: var(--color-text-tertiary);
+            text-align: center;
+            padding: 2rem;
+        }
+
+
+
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 85vh;
+                padding: 2rem 1.5rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+        }
+
+        /* ===================== ABOUT ASTROLOGY ===================== */
+        .about-astrology {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(139, 58, 58, 0.05) 100%);
+        }
+
+        .section-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Lora', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--color-accent-gold);
+            margin-bottom: 1rem;
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .philosophy-card {
+            padding: 2.5rem;
+            background: rgba(26, 58, 82, 0.3);
+            border: 1px solid var(--color-border);
+            border-radius: 15px;
+            transition: var(--transition-smooth);
+        }
+
+        .philosophy-card:hover {
+            background: rgba(139, 58, 58, 0.2);
+            border-color: var(--color-accent-gold);
+            transform: translateY(-5px);
+        }
+
+        .philosophy-card h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            color: var(--color-accent-gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .philosophy-card p {
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .philosophy-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* ===================== BHAGAVAD GITA SECTION ===================== */
+        .gita-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, rgba(26, 58, 82, 0.1) 0%, transparent 100%);
+            position: relative;
+        }
+
+        .gita-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .quotes-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .quote-card {
+            padding: 2rem;
+            background: rgba(139, 58, 58, 0.15);
+            border-left: 4px solid var(--color-accent-gold);
+            border-radius: 10px;
+            position: relative;
+            transition: var(--transition-smooth);
+        }
+
+        .quote-card:hover {
+            background: rgba(139, 58, 58, 0.25);
+            transform: translateX(10px);
+        }
+
+        .quote-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            font-size: 4rem;
+            color: rgba(212, 175, 55, 0.2);
+            font-family: 'Lora', serif;
+        }
+
+        .quote-sanskrit {
+            font-family: Georgia, serif;
+            font-size: 0.95rem;
+            color: var(--color-accent-gold);
+            margin-bottom: 1rem;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-size: 1.05rem;
+            color: var(--color-text-primary);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .quote-meaning {
+            font-size: 0.9rem;
+            color: var(--color-text-tertiary);
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .quotes-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===================== SERVICES SECTION ===================== */
+        .services {
+            padding: 6rem 2rem;
+        }
+
+        .services-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            padding: 2rem;
+            background: rgba(26, 58, 82, 0.4);
+            border: 1px solid var(--color-border);
+            border-radius: 15px;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            background: rgba(139, 58, 58, 0.25);
+            border-color: var(--color-accent-gold);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent-gold);
+        }
+
+        .service-card h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.3rem;
+            color: var(--color-accent-gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        /* ===================== CONSULTATION FEES ===================== */
+        .consultation {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, rgba(139, 58, 58, 0.1) 0%, rgba(26, 58, 82, 0.1) 100%);
+        }
+
+        .consultation-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .fee-box {
+            padding: 3rem;
+            background: rgba(26, 58, 82, 0.3);
+            border: 2px solid var(--color-accent-gold);
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .fee-amount {
+            font-family: 'Lora', serif;
+            font-size: 3rem;
+            color: var(--color-accent-gold);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .fee-description {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .consultation-text {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        /* ===================== WHY TRUST ===================== */
+        .trust-section {
+            padding: 6rem 2rem;
+        }
+
+        .trust-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .trust-card {
+            padding: 2rem;
+            background: rgba(139, 58, 58, 0.15);
+            border: 1px solid var(--color-border);
+            border-radius: 15px;
+            transition: var(--transition-smooth);
+        }
+
+        .trust-card:hover {
+            border-color: var(--color-accent-gold);
+            background: rgba(139, 58, 58, 0.25);
+        }
+
+        .trust-card h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            color: var(--color-accent-gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .trust-card p {
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===================== CTA SECTION ===================== */
+        .final-cta {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(139, 58, 58, 0.1) 100%);
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            color: var(--color-accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .final-cta p {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===================== FOOTER ===================== */
+        footer {
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--color-border);
+            background: rgba(15, 15, 30, 0.8);
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-family: 'Lora', serif;
+            color: var(--color-accent-gold);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .footer-divider {
+            height: 1px;
+            background: var(--color-border);
+            margin: 2rem 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: var(--color-text-tertiary);
+            font-size: 0.9rem;
+            padding-top: 1rem;
+        }
+
+        .footer-bottom p {
+            font-style: italic;
+            color: var(--color-text-tertiary);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* ===================== SCROLL ANIMATION ===================== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll-trigger {
+            animation-delay: 0s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                ACHARYA AMAL
+                <span>🕉️VEDIC JYOTISH🕉️</span>
+                <span>🕉️LIFE COACH🕉️</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About Astrology</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#consultation">Consultation</a></li>
+                <li><a href="#trust">Why Trust</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>
+                    Ancient Vedic Wisdom
+                    <span>for Modern Life Guidance</span>
+                </h1>
+                <p>
+                    Vedic Astrology is not superstition—it is the science of consciousness, karma, and decision-making.
+                    Understand your cosmic blueprint, align with your dharma, and navigate life with clarity and
+                    purpose.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://wa.me/8318753734?text=Hello%20Acharya%20Amal,%20I%20would%20like%20to%20book%20a%20consultation."
+                        class="btn-primary">
+                        📱 Consult on WhatsApp
+                    </a>
+                    <a href="#consultation" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="portrait-frame">
+                    <img src="./image/archarya_amal.png" alt="Acharya Amal Bajpayee - Vedic Jyotish and Life Coach">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ASTROLOGY -->
+    <section class="about-astrology" id="about">
+        <div class="section-container">
+            <h2 class="section-title">What is Vedic Astrology?</h2>
+            <p class="section-subtitle">
+                Beyond superstition lies a profound science of consciousness, psychological insight, and life guidance.
+            </p>
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <h3>🔮 Science of Consciousness</h3>
+                    <p>
+                        Vedic Jyotish is rooted in the Vedas—ancient texts that explore the nature of consciousness and
+                        cosmic order.
+                        It maps the celestial positions at your birth to understand your psychological blueprint and
+                        karmic patterns.
+                    </p>
+                </div>
+                <div class="philosophy-card">
+                    <h3>♻️ Karma & Free Will</h3>
+                    <p>
+                        Astrology reveals karmic tendencies but does not dictate your fate. You possess complete free
+                        will to make choices.
+                        Vedic guidance helps you understand patterns and make decisions aligned with your dharma.
+                    </p>
+                </div>
+                <div class="philosophy-card">
+                    <h3>🎯 Decision-Making Tool</h3>
+                    <p>
+                        Whether facing career changes, relationship questions, or financial decisions, astrology
+                        provides psychological
+                        clarity. It combines practical wisdom with spiritual understanding for authentic life direction.
+                    </p>
+                </div>
+                <div class="philosophy-card">
+                    <h3>💎 Modern Psychology + Ancient Wisdom</h3>
+                    <p>
+                        Vedic guidance bridges ancient spiritual knowledge with modern psychological understanding. It
+                        respects both
+                        rational thinking and intuitive wisdom, making it relevant for today's informed seeker.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BHAGAVAD GITA WISDOM -->
+    <section class="gita-section">
+        <div class="section-container">
+            <h2 class="section-title">Wisdom from the Bhagavad Gita</h2>
+            <p class="section-subtitle">
+                Sacred teachings to guide your path through dharma, karma, and clarity.
+            </p>
+            <div class="quotes-container">
+                <div class="quote-card">
+                    <div class="quote-sanskrit">यदि हि धर्मो बलवान् भवेत्</div>
+                    <p class="quote-text">
+                        "Perform your duty with integrity and without attachment to the results."
+                    </p>
+                    <p class="quote-meaning">
+                        — Bhagavad Gita 2.47: Focus on righteous action, not on fear or expected outcomes.
+                    </p>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-sanskrit">कर्मण्य् एवाधिकारस् ते</div>
+                    <p class="quote-text">
+                        "You have the right to action alone, but never to its fruits. Act without the intention of
+                        reaping fruits."
+                    </p>
+                    <p class="quote-meaning">
+                        — Bhagavad Gita 2.47: True freedom comes through action aligned with dharma.
+                    </p>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-sanskrit">समत्वं योग उच्यते</div>
+                    <p class="quote-text">
+                        "Equanimity is called yoga. The wise practice yoga and are freed from attachment."
+                    </p>
+                    <p class="quote-meaning">
+                        — Bhagavad Gita 2.48: Inner balance and detachment bring peace and clarity.
+                    </p>
+                </div>
+                <div class="quote-card">
+                    <div class="quote-sanskrit">परित्राणाय साधूनां</div>
+                    <p class="quote-text">
+                        "Whenever there is a decline of dharma and rise of adharma, the cosmic order restores balance."
+                    </p>
+                    <p class="quote-meaning">
+                        — Bhagavad Gita 4.7: Trust in divine order and the eventual triumph of truth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <h2 class="section-title">Services Offered</h2>
+            <p class="section-subtitle">
+                Comprehensive guidance for every dimension of your life.
+            </p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">♈</div>
+                <h3>Vedic Consultation</h3>
+                <p>
+                    In-depth birth chart analysis covering your personality, career trajectory, relationships, health,
+                    and life purpose.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔢</div>
+                <h3>Numerology</h3>
+                <p>
+                    Decode your life path number, destiny number, and personal year cycle for deeper self-understanding.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Vaastu Shastra</h3>
+                <p>
+                    Optimize your living and working spaces according to ancient architectural principles for harmony
+                    and prosperity.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">❓</div>
+                <h3>Prashnavali</h3>
+                <p>
+                    Quick guidance on specific questions using the sacred divination system. Answers to pressing life
+                    decisions.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>Life Coaching</h3>
+                <p>
+                    Personalized guidance blending astrology with practical psychology for career, relationships, and
+                    personal growth.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💎</div>
+                <h3>Remedies & Rituals</h3>
+                <p>
+                    Vedic remedies, gemstone recommendations, and pooja guidance to harmonize planetary influences.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✍️</div>
+                <h3>Signature Analysis</h3>
+                <p>
+                    Understand your personality, strengths, and challenges through the psychology of your handwriting.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌙</div>
+                <h3>Mantra & Tantra</h3>
+                <p>
+                    Sacred mantras and spiritual practices personalized to your chart for spiritual awakening and
+                    protection.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💍</div>
+                <h3>Gemstones & Crystals</h3>
+                <p>
+                    Selection and recommendations of authentic gemstones to strengthen planetary positions in your
+                    chart.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSULTATION & FEES -->
+    <section class="consultation" id="consultation">
+        <div class="consultation-container">
+            <h2 class="section-title">Consultation & Fees</h2>
+
+            <div class="fee-box">
+                <div class="fee-amount">₹800</div>
+                <div class="fee-description">
+                    One-Time Payment | Lifetime Guidance
+                </div>
+                <a href="https://wa.me/8318753734?text=Hello%20Acharya%20Amal,%20I%20would%20like%20to%20book%20a%20consultation."
+                    class="btn-primary">
+                    Start Your Guidance on WhatsApp
+                </a>
+            </div>
+
+            <div class="consultation-text">
+                <h3 style="color: var(--color-accent-gold); font-family: 'Lora', serif; margin-bottom: 1rem;">What
+                    "Lifetime Guidance" Means</h3>
+                <p style="margin-bottom: 1rem;">
+                    Your consultation is not a one-time reading. Once you connect with Acharya Amal, you have access to
+                    ongoing guidance for as long as you need it. Whether you have follow-up questions after weeks or
+                    months, need clarification on your path, or face new life situations—you remain part of the guidance
+                    relationship.
+                </p>
+
+                <h3
+                    style="color: var(--color-accent-gold); font-family: 'Lora', serif; margin-bottom: 1rem; margin-top: 2rem;">
+                    Our Consultation Approach</h3>
+                <p style="margin-bottom: 1rem;">
+                    <strong>Ethical & Responsible:</strong> We never predict fixed outcomes or create fear-based
+                    narratives. Astrology is about understanding patterns, not dictating destiny.
+                </p>
+                <p style="margin-bottom: 1rem;">
+                    <strong>Practical & Actionable:</strong> Every insight comes with practical guidance you can apply
+                    immediately to your life.
+                </p>
+                <p>
+                    <strong>Confidential & Personal:</strong> Your birth chart and personal information remain
+                    completely confidential. Each consultation is tailored uniquely to your situation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY TRUST THIS GUIDANCE -->
+    <section class="trust-section" id="trust">
+        <div class="trust-container">
+            <h2 class="section-title">Why Trust This Guidance?</h2>
+            <p class="section-subtitle">
+                Built on experience, dharma, and genuine care for your wellbeing.
+            </p>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <h3>🎓 Experience & Expertise</h3>
+                    <p>
+                        Years of deep study in Vedic texts, birth chart analysis, and real-world consultation
+                        experience.
+                        Every reading is grounded in classical Jyotish principles combined with modern understanding.
+                    </p>
+                </div>
+                <div class="trust-card">
+                    <h3>⚖️ Respect for Dharma & Free Will</h3>
+                    <p>
+                        We believe in your agency. Astrology reveals patterns and potentials, but your choices define
+                        your destiny.
+                        We guide, we don't control. We respect your freedom completely.
+                    </p>
+                </div>
+                <div class="trust-card">
+                    <h3>🧠 Balanced Guidance</h3>
+                    <p>
+                        We blend spiritual wisdom with psychological insight and practical advice. You receive guidance
+                        that feeds
+                        both your soul and your practical life needs.
+                    </p>
+                </div>
+                <div class="trust-card">
+                    <h3>🔐 Confidentiality & Integrity</h3>
+                    <p>
+                        Your personal information, birth details, and consultations remain completely confidential.
+                        We maintain the highest ethical standards in every interaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <h2>Ready for Clarity?</h2>
+        <p>
+            Your journey to understanding your cosmic blueprint and life purpose begins with a single conversation.
+        </p>
+        <a href="https://wa.me/8318753734?text=Hello%20Acharya%20Amal,%20I%20would%20like%20to%20book%20a%20consultation."
+            class="btn-primary">
+            📱 Connect on WhatsApp (₹800)
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Acharya Amal Bajpayee</h4>
+                <p>Vedic Jyotish & Life Coach</p>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>Kannauj, Uttar Pradesh, India</p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <a href="https://wa.me/8318753734?text=Hello%20Acharya%20Amal,%20I%20would%20like%20to%20book%20a%20consultation."
+                    style="color: var(--color-accent-gold); text-decoration: none;">
+                    📱 WhatsApp: 8318753734
+                </a>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <p>
+                "Yoga is the journey of the self, through the self, to the self." — Bhagavad Gita 6.20
+            </p>
+            <p style="margin-top: 1rem;">
+                © 2025 Acharya Amal Bajpayee. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll behavior for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.philosophy-card, .quote-card, .service-card, .trust-card').forEach(element => {
+            observer.observe(element);
+        });
+
+        // WhatsApp button tracking (optional analytics)
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', function () {
+                console.log('WhatsApp consultation initiated');
+            });
+        });
+    </script>
+</body>
+
+</html>
